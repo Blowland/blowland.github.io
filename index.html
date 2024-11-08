@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Manager</title>
+    <style>
+        /* General styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Style for the download links list items */
+        .download-list li {
+            margin-bottom: 20px; /* Adds space between each download link */
+        }
+
+        /* Style for download links */
+        .download-link {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 200px;
+            text-align: center;
+            display: block; /* Ensures the button spans the full width of its container */
+        }
+
+        .download-link:hover {
+            background-color: #45a049;
+        }
+
+        /* Style for buttons */
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            margin: 20px; /* More space between buttons */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main heading of the page -->
+    <h1>Download Your Files</h1>
+    
+    <!-- Container for buttons and links -->
+    <div class="container">
+        <!-- List of download links -->
+        <ul class="download-list" id="downloadLinks">
+            <li><a href="file1.pdf" class="download-link" download>Download PDF 1</a></li>
+            <li><a href="file2.zip" class="download-link" download>Download ZIP File</a></li>
+            <li><a href="file3.mp3" class="download-link" download>Download MP3</a></li>
+            <li><a href="file4.jpg" class="download-link" download>Download Image</a></li>
+            <li><a href="file5.docx" class="download-link" download>Download Word Document</a></li>
+        </ul>
+        
+        <!-- Optional Example Button (You can add more buttons as needed) -->
+        <button class="button">Example Button (Optional)</button>
+    </div>
+
+</body>
+</html>
